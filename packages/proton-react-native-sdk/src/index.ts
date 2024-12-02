@@ -5,10 +5,10 @@ import ProtonLink, {
   LinkStorage,
   LinkOptions,
   LinkSession,
-  PermissionLevel,
+  
 } from '@proton/link'
 import { JsonRpc } from '@proton/js'
-
+import { PermissionLevel} from '@greymass/eosio'
 import Storage from './storage'
 
 type PartialBy<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>
